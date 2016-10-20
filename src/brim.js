@@ -6,7 +6,7 @@ function Brim(global, config) {
         player = {},
         viewport,
         eventEmitter;
-    
+
     if (!(this instanceof Brim)) {
         return new Brim(config);
     }
@@ -118,7 +118,7 @@ function Brim(global, config) {
         // Why make it such a large number?
         // Huge body height makes the size and position of the scrollbar fixed.
         treadmill.style.width = '1px';
-        treadmill.style.height = '9999999999999999px';
+        treadmill.style.height = '999em';
 
         return treadmill;
     };
